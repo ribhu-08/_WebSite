@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/login_signup.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+  <header>
+    <!--navbar start-->
+    <div class="navbar">
+      <div class="headings">
+        <marquee>spring season sale is going on</marquee>
+      </div>
+      <!--icons-->
+      <div class="icons">
+        <div class="facebook">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="instagram">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="twitter">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="pinterest">
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Currency and Language Switchers -->
+      <div class="nav-extras">
+        <!-- Currency Dropdown -->
+        <select name="currency" class="currency-selector">
+          <option value="usd">USD</option>
+          <option value="inr">INR</option>
+          <option value="eur">EUR</option>
+        </select>
+
+        <!-- Language Dropdown -->
+        <select name="language" class="language-selector">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="fr">French</option>
+        </select>
+      </div>
+
+      <!-- Login Page -->
+
+      <div class="container-login">
+        <div class="login-popup">
+          <form action="login.php" method="post">
+            <div class="login-title">Log in <a href="#" class="login-signup-cross"><img
+                  style="margin-left: 75%; padding-bottom: 20px;scale: 1.4;" src="assets/logo/x.svg" alt="x"></i></a>
+            </div>
+            <p>
+              <input type="text" name="email" placeholder="Email *" required autofocus>
+            </p>
+            <p>
+              <input type="password" name="password" placeholder="Password *" required>
+            </p>
+            <a href="#">Forgot your password?</a> <br>
+            <button class="btn btn-dark">Log in</button>
+            <a href="#" id="login">New Customer? Create your Account</a>
+          </form>
+        </div>
+        <div class="signup-popup">
+          <form action="signup.php" method="post">
+            <p class="signup-title">Register<a href="#" class="login-signup-cross"><img src="assets/logo/x.svg" alt="x"
+                  style="margin-left:75%;padding-bottom: 20px; scale: 1.4;"></i></a></p>
+
+            <p>
+              <input type="text" name="fname" id="fname" placeholder="First Name" autofocus>
+            </p>
+            <p>
+              <input type="text" name="lname" id="lname" placeholder="Last Name">
+            </p>
+            <p>
+              <input type="text" name="email" placeholder="Email *" required>
+            </p>
+            <p>
+              <input type="password" name="password" placeholder="Password *" required>
+            </p>
+            <button class="btn btn-dark ">Log in</button>
+            <a href="#" id="signup">Already have an Account? Log in here</a>
+          </form>
+        </div>
+      </div>
+  </header>
+  <nav>
+    <div class="menu-bar">
+      <div class="logo">
+        <h1><span>E</span>zy<span>S</span>hop</h1>
+      </div>
+
+      <div class="menu-dropdowns">
+        <select name="home" class="home-selector">
+          <option value="home">home</option>
+        </select>
+
+        <select name="shop" class="shop-selector">
+          <option value="shop">shop</option>
+        </select>
+
+        <select name="products" class="products-selector">
+          <option value="products">products</option>
+        </select>
+
+        <select name="pages" class="pages-selector">
+          <option value="pages">pages</option>
+        </select>
+
+        <select name="blog" class="blog-selector">
+          <option value="blog">blog</option>
+        </select>
+      </div>
+
+      <div class="icons2">
+        <div class="profile">
+          <a href="#"><i class="fa-solid fa-user login-btn"></i></a>
+        </div>
+
+        <div clas="search">
+          <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+
+        <div class="wishlist">
+          <a href=""><i class="fa-solid fa-heart"></i></a>
+        </div>
+
+        <div class="cart">
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="main-content-container">
+    <div class="panels">
+      <img src="" alt="">
+    </div>
+
+    <div class="price-drop">
+      <marquee>
+
+        <i>Spring Clearence Event: Save up to 70% Spring Clearence Event: Save up to 70% Spring Clearence Event: Save up
+          to 70% Spring Clearence Event: Save up to 70% Spring Clearence Event: Save up to 70% Spring Clearence Event:
+          Save up to 70%</i>
+      </marquee>
+    </div>
+
+    <!--have to add an icon here-->
+    <div class="shop-by-categories">
+      <a class="left-slide">&lt;</a>
+      <a class="right-slide">&gt;</a>
+      <span>
+        SHOP BY CATEGORIES
+      </span>
+    </div>
+    <div class="categories-item-list">
+      <div class="categories-sec">
+        <div class="item-container">
+          <div class="item">1</div>
+        </div>
+        <div class="item-container">
+          <div class="item">2</div>
+        </div>
+        <div class="item-container">
+          <div class="item">3</div>
+        </div>
+        <div class="item-container">
+          <div class="item">4</div>
+        </div>
+        <div class="item-container">
+          <div class="item">5</div>
+        </div>
+        <div class="item-container">
+          <div class="item">6</div>
+        </div>
+        <div class="item-container">
+          <div class="item">7</div>
+        </div>
+        <div class="item-container">
+          <div class="item">8</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="best-seller-title">
+      <div>
+        <h1>Best Seller</h1>
+        <p>Shop the Latest Styles: Stay ahead of the curve with our newest arrivals</p>
+      </div>
+    </div>
+    <div style="display:grid; justify-content: center; width: 100%; align-items: center;">
+      <div class="container-cloths">
+        <div class="cloths-item">A</div>
+        <div class="cloths-item">B</div>
+        <div class="cloths-item">C</div>
+        <div class="cloths-item">D</div>
+        <div class="cloths-item">E</div>
+        <div class="cloths-item">A</div>
+        <div class="cloths-item">B</div>
+        <div class="cloths-item">C</div>
+      </div>
+    </div>
+
+    <div class="shop-the-look-title">
+      <div>
+        <h1>
+          Happy Clients
+        </h1>
+        <p>Hear what they say about us</p>
+      </div>
+    </div>
+
+    <section class="bottom-info">
+      <div class="info">
+        <div class="info-div"><img src="assets/logo/box.svg"><h1>Free Shipping</h1><p>Free shipping over order &#8377;500</p></div>
+        <div class="info-div"><img src="assets/logo/credit-card-2-back-fill.svg" alt=""><h1>Flexible Payment</h1><p>Pay with Multiple Credit Cards</p></div>
+        <div class="info-div"><img src="assets/logo/arrow-return-left.svg" alt=""><h1>14 Days Returns</h1><p>Within 30 Days for an exchange</p></div>
+        <div class="info-div"><img src="assets/logo/person-raised-hand.svg" alt=""><h1>Premium Support</h1><p>Outstanding Premium Support</p></div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer>
+    <div class="footer-body">
+      <div class="col-footer row">
+        <h4>ShopEasy</h4>
+        <p>
+          Address: 1234 Fashion Stree, Suite, Ranchi 834004 - Jharkhand.<br>
+          Email : info@ShopEasy.com <br>
+          Phone : (+91) 7542805551
+          <br>
+        </p>
+      </div>
+      <div class="col-footer">
+        <h6>Help</h6>
+        <ul>
+          <li><a href="#" class="footer-links">Privacy Policy</a></li>
+          <li><a href="#" class="footer-links">Return + Exchange</a></li>
+          <li><a href="#" class="footer-links">Shipping</a></li>
+          <li><a href="#" class="footer-links">Terms & Conditions</a></li>
+          <li><a href="#" class="footer-links">FAQ's</a></li>
+          <li><a href="#" class="footer-links">Compare</a></li>
+          <li><a href="#" class="footer-links">My Wishlist</a></li>
+        </ul>
+      </div>
+      <div class="col-footer">
+        <h6>About Us</h6>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Visit Our Store</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col-footer">
+        <h6>Sign Up for Email</h6>
+        <p>Sign up to get first dibs on new arrivals, sales, exclusive cotent, events and more!</p>
+        <input type="text" placeholder="Enter Your e-mail">
+        <br>
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script/script.js"></script>
+</body>
+
+</html>

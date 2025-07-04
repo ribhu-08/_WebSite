@@ -1,27 +1,27 @@
+
 .navbar {
   height: 45px;
   width: 100%;
+  background-color: rgb(255, 255, 255);
 }
 
 .headings {
   color: black;
   padding-left: 30%;
+  padding-right: 30%;
   font-size: 18px;
-  padding-top: 6px;
-  width: 30%;
-  text-align: center;
+  flex: auto;
 }
 
 .icons {
   height: 40px;
   width: 200px;
   display: flex;
-  /* background-color: rgb(253, 249, 249); */
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
-  justify-content: space-evenly;
+  z-index: 1;
+  justify-content: space-around;
   padding-left: 20px;
   padding-top: 6px;
   font-size: 18px;
@@ -35,10 +35,70 @@
   right: 20px; /* adjust to position it in the navbar */
   top: 10px; /* adjust as needed */
 }
-
+ 
 .currency-selector,
 .language-selector {
   padding: 4px;
   font-size: 12px;
   border: none;
+}
+
+/* Update 1 */
+
+
+.menu-bar{
+  width:100%;
+  height:80px;
+  background-color: antiquewhite;
+  display: flex;
+  column-gap: auto;
+
+  
+}
+.logo span {
+  color:rgb(233, 213, 0)
+}
+
+/* add logo*/
+.logo h1{
+  font-weight: bolder;
+  padding-top: 15px;
+  padding-left: 20px;
+  height:100%;
+  letter-spacing: 4px;
+
+}
+
+
+.menu-dropdowns{
+
+  display: flex;
+  align-items: center;
+  flex:1;
+  justify-content:center;
+  column-gap: 30px;
+}
+
+.menu-dropdowns select{
+
+  font-size: 17px;
+  font-family: Helvetica, sans-serif;
+  padding : 5px;
+  border : none;
+  background-color: transparent;
+    
+  
+}
+.login-signup-cross img:hover{
+  
+}
+
+.icons2{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  gap: 30px; 
+  justify-content: space-around;
+  font-size: 20px;
+  padding-right: 100px;
 }
