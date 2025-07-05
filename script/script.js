@@ -46,7 +46,7 @@ const r_shift = document.querySelector('.right-slide');
 
 let offset = 0;
 let count = 0;
-let offset_amount = 490;
+let offset_amount = 380;
 
 const l_shift_listner = l_shift.addEventListener('click', () => {
     if(count <= 0){
@@ -56,14 +56,17 @@ const l_shift_listner = l_shift.addEventListener('click', () => {
       count -= 1;
       offset += offset_amount;
       box.style.transform = `translateX(${offset}px)`;
+      box.style.transition = 'ease-in-out 0.4s'; 
     }
 
 })
 r_shift.addEventListener('click', () => {
-    if(count <= 4){
+    if(count <= 3){
         count++;
     offset -= offset_amount;
     box.style.transform = `translateX(${offset}px)`;
+      box.style.transition = 'ease-in-out 0.4s'; 
+
     }
     
     
