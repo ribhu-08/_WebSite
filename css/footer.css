@@ -29,9 +29,8 @@
 .col-footer a:hover {
   color: rgb(182, 0, 0);
 }
-.col-footer h6,
 .col-footer h4 {
-  margin-left: 10px;
+  margin-left: 14px;
   font-weight: bold;
 }
 
