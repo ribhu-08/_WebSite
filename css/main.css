@@ -14,20 +14,37 @@
 .main-content-container {
   display: grid;
   width: 100%;
-  grid-template-rows: 1fr 60px 60px 1fr;
+  grid-template-rows: 600px 60px 60px 1fr;
 }
   .panels {
+    display: flex;
     background-color: antiquewhite;
-    height: 500px;
+    justify-content: center;
   }
 
   .panel-info {
+    text-align: center;
     width: 25%;
-    border: 1px solid red;
+    position: absolute;
+    bottom: 30px;
   }
 
   .panel-info h1{
-    letter-spacing: 2px;
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+
+  .panel-info button {
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: ease-in-out 0.3s;
+  }
+
+  .panel-info button:hover {
+    color: black;
+    background-color: white;
   }
 
   .price-drop {
@@ -167,28 +184,36 @@
 }
 
 .bottom-info {
-  height: 270px;
+  height: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
 } 
 .info {
-  height: auto;width: 100%;
+  
   display: grid;
   grid-template-columns: repeat(4,1fr);
   padding: 40px;
-  gap: 40px;
+  gap: 60px;
 }
 
-@media (max-width:750px){
+@media (max-width:900px){
+  .bottom-info {
+    height: 500px;
+  }
   .info {
     grid-template-columns: repeat(2,1fr);
+    gap: 40px;
   }
 }
 @media (max-width:500px){
+  .bottom-info {
+    height: 700px;
+  }
   .info {
     grid-template-columns: repeat(1,1fr);
-    scale: 0.8;
+    gap: 10px;
+    scale: 0.85;
   }
 }
 
