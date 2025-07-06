@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/login_signup.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/cart-css/order-cart.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header>
+      <div class="container-login">
+        <div class="login-popup">
+          <form action="login.php" method="post">
+            <div class="login-title">Log in <a href="#" class="login-signup-cross"><img
+                  style="margin-left: 75%; padding-bottom: 20px;scale: 1.4;" src="../assets/logo/x.svg" alt="x"></i></a>
+            </div>
+            <p>
+              <input type="text" name="email" placeholder="Email *" required autofocus>
+            </p>
+            <p>
+              <input type="password" name="password" placeholder="Password *" required>
+            </p>
+            <a href="#">Forgot your password?</a> <br>
+            <button class="btn btn-dark">Log in</button>
+            <a href="#" id="login">New Customer? Create your Account</a>
+          </form>
+        </div>
+        <div class="signup-popup">
+          <form action="signup.php" method="post">
+            <p class="signup-title">Register<a href="#" class="login-signup-cross"><img src="../assets/logo/x.svg" alt="x"
+                  style="margin-left:75%;padding-bottom: 20px; scale: 1.4;"></i></a></p>
+
+            <p>
+              <input type="text" name="fname" id="fname" placeholder="First Name" autofocus>
+            </p>
+            <p>
+              <input type="text" name="lname" id="lname" placeholder="Last Name">
+            </p>
+            <p>
+              <input type="text" name="email" placeholder="Email *" required>
+            </p>
+            <p>
+              <input type="password" name="password" placeholder="Password *" required>
+            </p>
+            <button class="btn btn-dark ">Log in</button>
+            <a href="#" id="signup">Already have an Account? Log in here</a>
+          </form>
+        </div>
+      </div>
+  </header>
+  <nav>
+      <div class="menu-bar">
+        <div class="logo">
+          <a href="../index.html"><h1><span>E</span>zy<span>S</span>hop</h1></a>
+          
+        </div>
+  
+        <div class="menu-dropdowns">
+          <select name="home" class="home-selector">
+            <option value="home">Home</option>
+          </select>
+  
+          <select name="shop" class="shop-selector">
+            <option value="shop">Shop</option>
+          </select>
+  
+          <select name="products" class="products-selector">
+            <option value="products">Products</option>
+          </select>
+  
+          <select name="pages" class="pages-selector">
+            <option value="pages">Category</option>
+          </select>
+  
+          <!-- <select name="blog" class="blog-selector">
+            <option value="blog">blog</option>
+          </select> -->
+        </div>
+  
+        <div class="icons2">
+          <div class="profile">
+            <a href="#"><i class="fa-solid fa-user login-btn"></i></a>
+          </div>
+  
+          <div clas="search">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+  
+          <div class="wishlist">
+            <a href=""><i class="fa-solid fa-heart"></i></a>
+          </div>
+  
+          <div class="cart">
+            <a href="../pages/cart-page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <main class="main-container">
+
+    <div class="title-div">
+      <h1 class="order-cart-title">Shopping Cart</h1>
+    </div>
+    <div class="cart-item-container">
+      <div class="cart-item">
+        <div class="cart-title">
+          <p>Product</p>
+          <p>Price</p>
+          <p>Quantity</p>
+          <p>Total</p>
+        </div>
+        <hr class="cart">
+        
+        <!-- Items from here -->
+
+        <div class="items">
+          <img src="../assets/img/img1-purple.png" alt="">
+          <div class="item-description">
+            <section>
+              <h6 class="product-name">Ribbed Tank Top</h6>
+              <p class="product-detail">Purple / M</p>
+              <a href="#" class="product-remove">Remove</a>
+            </section>
+            <div class="item-price">&#8377;1000</div>            
+            <div class="item-quantity">
+              <button class="decr">-</button>
+              <input type="number" class="item-quantity-box" name="item-quantity-box" min="1" max="99" value="1" step="1">
+              <button class="incr">+</button>
+            </div>            
+            <div class="total-item-price">&#8377;5000</div>            
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+
+        <div class="items">
+          <img src="../assets/img/img1-purple.png" alt="">
+          <div class="item-description">
+            <section>
+              <h6 class="product-name">Ribbed Tank Top</h6>
+              <p class="product-detail">Purple / M</p>
+              <a href="#" class="product-remove">Remove</a>
+            </section>
+            <div class="item-price">&#8377;1000</div>            
+            <div class="item-quantity">
+              <button class="decr">-</button>
+              <input type="number" class="item-quantity-box" name="item-quantity-box" min="1" max="99" value="1" step="1">
+              <button class="incr">+</button>
+            </div>            
+            <div class="total-item-price">&#8377;5000</div>            
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+
+        <div class="items">
+          <img src="../assets/img/img1-purple.png" alt="">
+          <div class="item-description">
+            <section>
+              <h6 class="product-name">Ribbed Tank Top</h6>
+              <p class="product-detail">Purple / M</p>
+              <a href="#" class="product-remove">Remove</a>
+            </section>
+            <div class="item-price">&#8377;1000</div>            
+            <div class="item-quantity">
+              <button class="decr">-</button>
+              <input type="number" class="item-quantity-box" name="item-quantity-box" min="1" max="99" value="1" step="1">
+              <button class="incr">+</button>
+            </div>            
+            <div class="total-item-price">&#8377;5000</div>            
+          </div>
+        </div>
+
+        <!-- Cart Total Summary -->
+      </div>
+      <div class="cart-summary">
+        <div class="Summary-details">
+          <p class="s-title">Subtotal</p>
+          <p class="subtotal-amount">&#8377;5000</p>
+          <p class="s-title">Taxex: </p>
+          <p></p>
+          <p style="padding-left: 50px; " class="s-title">CGST</p><p>1.5%</p>
+          <p style="padding-left: 50px;" class="s-title">SGST</p><p>1.5%</p>
+          <p  class="s-title">After Tax:</p><p class=" after-tax">&#8377;150 + &#8377;5000</p><p></p><p>= &#8377;5150</p>
+          <p class="s-title">Shipping</p><p class="shipping" class="s-title">Free</p><hr style="margin: 0;width: 100%;
+          grid-column: 1/ span 2;line-break: loose;">
+          <p class="s-title">Total</p><p class="Total">&#8377;5300</p>
+          <button class="Checkout">Check out</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Extras  -->
+
+    
+      <div class="shop-the-look-title">
+      <div>
+        <h1>
+          Recently Viewed
+        </h1>
+      </div>
+    </div>
+
+    <div style="display:grid; justify-content: center; width: 100%; align-items: center;">
+      <div class="container-cloths">
+        <div class="cloths-item">A</div>
+        <div class="cloths-item">B</div>
+        <div class="cloths-item">C</div>
+        <div class="cloths-item">D</div>
+      </div>
+    </div>
+
+    <p style="padding: 60px;"></p>
+  
+  <footer>
+    <div class="footer-body">
+      <div class="col-footer row">
+        <h4>ShopEasy</h4>
+        <p>
+          Address: 1234 Fashion Stree, Suite, Ranchi 834004 - Jharkhand.<br>
+          Email : info@ShopEasy.com <br>
+          Phone : (+91) 7542805551
+          <br>
+        </p>
+      </div>
+      <div class="col-footer">
+        <h6>Help</h6>
+        <ul>
+          <li><a href="#" class="footer-links">Privacy Policy</a></li>
+          <li><a href="#" class="footer-links">Return + Exchange</a></li>
+          <li><a href="#" class="footer-links">Shipping</a></li>
+          <li><a href="#" class="footer-links">Terms & Conditions</a></li>
+          <li><a href="#" class="footer-links">FAQ's</a></li>
+          <li><a href="#" class="footer-links">Compare</a></li>
+          <li><a href="#" class="footer-links">My Wishlist</a></li>
+        </ul>
+      </div>
+      <div class="col-footer">
+        <h6>About Us</h6>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Visit Our Store</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col-footer">
+        <h6>Sign Up for Email</h6>
+        <p>Sign up to get first dibs on new arrivals, sales, exclusive cotent, events and more!</p>
+        <input type="text" placeholder="Enter Your e-mail">
+        <br>
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </footer>
+
+<!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script/script.js"></script>
+  <script src="../script/cart.js"></script>
+</body>
+
+</html>
